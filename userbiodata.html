@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition">
+    <!--content wraper-->
+    <div class="wrapper">
+        <section class="content mt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--profile-->
+                    <div class="col-md-3">
+                        <div class="card card-primary card-outline">
+                            <div class="card-body box-profile">
+                                <div class="text-center">
+                                    <img src="assets/img/user4-128x128.jpg" alt=""
+                                        class="profile-user-img img-fluid img-circle">
+                                    <h3 class="profile-username text-center">
+                                        Nama AKun
+                                    </h3>
+                                </div>
+                                <ul class="list-group list-group-unbordered mb-3">
+                                    <li class="list-group-item">
+                                        <b>Kewarganegaraan</b> <a class="float-right">Bendera</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end profile-->
+
+                    <!--tabs detail-->
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-header">
+                                Biodata
+                            </div>
+                            <div class="card-body">
+                                <form action="userhome.html" class="form-horizontal">
+                                    <div class="form-group row">
+                                        <label for="name" class="col-sm-3 col-form-label">Nama</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                Placeholder="Nama Depan">
+                                            <input type="text" name="name-l" id="name-l" class="form-control mt-2"
+                                                placeholder="Nama Belakang">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="ttl" class="col-sm-3 col-form-label">Tempat & Tgl Lahir</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="ttl" id="ttl" class="form-control"
+                                                placeholder="Tempat Lahir">
+                                            <div class="input-group mt-2">
+                                                <input type="text" name="tgl" id="tgl" class="form-control"
+                                                    placeholder="Tanggal Lahir">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-calender-alt"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="jkel" class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                                        <div class="col-sm-9" id="jkel">
+                                            <div class="form-group clearfix">
+                                                <div class="icheck-primary d-inline mr-5">
+                                                    <input type="radio" name="jkel-l" id="radioPrimary1">
+                                                    <label for="radioPrimary1">Laki-Laki</label>
+                                                </div>
+                                                <div class="icheck-primary d-inline">
+                                                    <input type="radio" name="jkel-p" id="radioPrimary2">
+                                                    <label for="radioPrimary2">Perempuan</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="alamat" class="col-sm-3 col-form-label">Alamat</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="alamat" id="alamat"
+                                                rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-4 mb-4">
+                                    <div class="form-group row">
+                                        <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <hr class="mt-4 mb-4">
+                                    <div class="form-group row">
+                                        <label for="nopass" class="col-sm-3 col-form-label">Nomor Passport</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="nopass" id="nopass" class="form-control"
+                                                placeholder="Nomor Passport">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="diberikandi" class="col-sm-3 col-form-label">Diberikan di</label>
+                                        <div class="col-sm-9 row">
+                                            <div class="col-sm-6">
+                                                <input type="text" name="diberika" id="diberikandi" class="form-control"
+                                                    placeholder="Diberikan di">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="tgldiberikan" id="diberikandi"
+                                                    class="form-control" placeholder="Tgl Diberikan">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="kewarganegaraan"
+                                            class="col-sm-3 col-form-label">Kewarganegaraan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="kewarganegaraan" id="kewarganegaraan"
+                                                class="form-control" placeholder="Kewarganegaraan">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="statusnikah" class="col-sm-3 col-form-label">Status Sipil /
+                                            Perkawinan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="statusnikah" id="statusnikah" class="form-control"
+                                                placeholder="Status Sipil">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="pekerjaan" class="col-sm-3 col-form-label">Pekerjaan</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="pekerjaan" id="pekerjaan" class="form-control"
+                                                placeholder="Pekerjaan">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="pengurus" class="col-sm-3 col-form-label">Pengurus</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="pengurus" id="pengurus" class="form-control"
+                                                placeholder="Pengurus">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="birojasa" class="col-sm-3 col-form-label">Biro Jasa</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="birojasa" id="birojasa" class="form-control"
+                                                placeholder="Biro Jasa">
+                                        </div>
+                                    </div>
+                                    <hr class="mt-4 mb4">
+                                    <input type="submit" value="Simpan" class="btn btn-primary float-right">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end tabs detail-->
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--end content wraper-->
+
+
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/dist/js/adminlte.min.js"></script>
+</body>
+
+</html>

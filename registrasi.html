@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pendaftaran Akun</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition login-page">
+    <div class="col-md-8">
+        <div class="card card-blue">
+            <div class="card-header ui-sortable-handle">
+                <h3 class="card-title">
+                    <i class="fa fa-user-plus mr-1" aria-hidden="true"></i> Registrasi User Baru
+                </h3>
+            </div>
+
+            <form class="form-horisontal" action="login.html" method="POST">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="firstName" class="col-sm-3 col-form-label">Nama</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="firstName" id="firstName" class="form-control"
+                                placeholder="Nama Depan">
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" name="lastName" id="firstName" class="form-control"
+                                placeholder="Nama Belakang">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bod" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="firstName" id="firstName" class="form-control"
+                                placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bod" class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                        <div class="col-sm-9">
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio"
+                                    checked>
+                                <label for="customRadio1" class="custom-control-label">Laki-Laki</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio">
+                                <label for="customRadio2" class="custom-control-label">Perempuan</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                        <label for="bod" class="col-sm-3 col-form-label">Kewarganegaraan</label>
+                        <div class="col-sm-9">
+                            <select name="nty" id="nty" class="form-control">
+                                <option value="America">America</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Singapura">Singapura</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group row mt-4">
+                        <label for="bod" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" name="lastName" id="firstName" class="form-control"
+                                placeholder="Email Aktiv">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-4">
+                        <label for="bod" class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" name="lastName" id="firstName" class="form-control"
+                                placeholder="Password">
+                        </div>
+                    </div>
+                    <hr>
+                    <a href="login.html" class="btn btn-outline-secondary"><i class="fa fa-backspace mr-2"
+                            aria-hidden="true"></i>Kembali</a>
+                    <button type="submit" class="btn btn-primary float-right"> <i class="fa fa-save mr-2"
+                            aria-hidden="true"></i>Simpan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /. registrasi page -->
+
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/dist/js/adminlte.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>USER HOME</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition">
+
+    <!--content wraper-->
+    <div class="wrapper">
+        <section class="content mt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--profile-->
+                    <div class="col-md-3">
+                        <div class="card card-primary card-outline">
+                            <div class="card-body box-profile">
+                                <div class="text-center">
+                                    <img src="assets/img/user4-128x128.jpg" alt=""
+                                        class="profile-user-img img-fluid img-circle">
+                                    <h3 class="profile-username text-center">
+                                        Nama AKun
+                                    </h3>
+                                </div>
+                                <ul class="list-group list-group-unbordered mb-3 mt-5">
+                                    <li class="list-group-item">Australia<a class="float-right"></a></li>
+                                    <li class="list-group-item">NO.PASSPORT29099929 <a class="float-right"></a>
+                                    </li>
+                                </ul>
+                                <a href="userbiodata.html" class="btn btn-outline-secondary btn-xs float-right">Edit
+                                    Profil</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end profile-->
+
+                    <!--tabs detail-->
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-header p-2">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item"><a class="nav-link active" href="#passport"
+                                            data-toggle="tab">Identitas</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#pengejuan"
+                                            data-toggle="tab">Pengajuan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#history_penjuan"
+                                            data-toggle="tab">History Pengajuan</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="passport">
+                                        <img src="assets/img/pass.jpg" alt="">
+                                    </div>
+                                    <div class="tab-pane" id="pengejuan">
+                                        <div class="form-group">
+                                            <select name="" id="jenis_pejgajuan" class="form-control">
+                                                <option value="itas">Permohonan Izin Tinggal Terbatas</option>
+                                                <option value="itap">Permohonan Izin Tinggal Tetap</option>
+                                                <option value="itkun">Permohonan Izin Tinggal Kunjungan</option>
+                                                <option value="asit">PermohonanAlih Status Izin Tinggal</option>
+                                            </select>
+                                        </div>
+
+                                        <!--Formulir Permhonan-->
+                                        <label class="mt-5"><b>Formulir Permohonan</b></label>
+                                        <hr>
+                                        <div class="form-group row">
+                                            <label for="nopermohonan" class="col-sm-3 col-form-label">Nomor
+                                                Permohonan</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" name="nopermohonan" id="nopermohonan"
+                                                    class="form-control" disabled value="23232309">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="nopermohonan" class="col-sm-3 col-form-label">Kegiatan</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control select2" style="width: 100%;">
+                                                    <option selected="selected">Dalam rangka penanaman Modal, Tenaga
+                                                        Ahli, Rohaniawan </option>
+                                                    <option>Mengikuti Pendidikan, Penelitian Ilmiah</option>
+                                                    <option>Lain sebagainya sesuai ketentuan imigrasi</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="nopermohonan" class="col-sm-3 col-form-label">Nomor
+                                                Lama Tinggal</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control select2" style="width: 100%;">
+                                                    <option selected="selected">6 Bulan</option>
+                                                    <option>1 Tahun</option>
+                                                    <option>2 Tahun</option>
+                                                    <option>5 Tahun</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="penjamin" class="col-sm-3 col-form-label">Penjamin</label>
+                                            <div class="col-sm-9">
+                                                <div class="input-group">
+                                                    <input type="text" name="penjamin" id="penjamin"
+                                                        class="form-control" readonly>
+                                                    <span class="input-group-append">
+                                                        <button class="btn btn-info" data-toggle="modal"
+                                                            data-target="#modal-lg">
+                                                            <i class="fas fa-search mr-2"></i> Cari
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="mt-5"><b>Lampiran File</b></label>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Surat dari Penjamin</td>
+                                                    <td class="align-right">
+                                                        <div class="btn-group btn-group-sm float-right">
+                                                            <button class="btn btn-info"><i
+                                                                    class="fas fa-eye"></i></button>
+                                                            <button class="btn btn-success"><i
+                                                                    class="fas fa-upload"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Passport yang masih berlaku</td>
+                                                    <td class="align-right">
+                                                        <div class="btn-group btn-group-sm float-right">
+                                                            <button class="btn btn-info"><i
+                                                                    class="fas fa-eye"></i></button>
+                                                            <button class="btn btn-success"><i
+                                                                    class="fas fa-upload"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Surat keterangan domisili</td>
+                                                    <td class="align-right">
+                                                        <div class="btn-group btn-group-sm float-right">
+                                                            <button class="btn btn-info"><i
+                                                                    class="fas fa-eye"></i></button>
+                                                            <button class="btn btn-success"><i
+                                                                    class="fas fa-upload"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Surat Rekomendasi dari Kementerian / Lembaga Pemerintah non
+                                                        kementerian terkait</td>
+                                                    <td class="align-right">
+                                                        <div class="btn-group btn-group-sm float-right">
+                                                            <button class="btn btn-info"><i
+                                                                    class="fas fa-eye"></i></button>
+                                                            <button class="btn btn-success"><i
+                                                                    class="fas fa-upload"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Rencana Penggunaan Tenaga Kerja Asing (RPTKA) dari instansi
+                                                        berwenang</td>
+                                                    <td class="align-right">
+                                                        <div class="btn-group btn-group-sm float-right">
+                                                            <button class="btn btn-info"><i
+                                                                    class="fas fa-eye"></i></button>
+                                                            <button class="btn btn-success"><i
+                                                                    class="fas fa-upload"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tanda masuk yang masih berlaku</td>
+                                                    <td class="align-right">
+                                                        <div class="btn-group btn-group-sm float-right">
+                                                            <button class="btn btn-info"><i
+                                                                    class="fas fa-eye"></i></button>
+                                                            <button class="btn btn-success"><i
+                                                                    class="fas fa-upload"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <hr>
+                                        <button class="btn btn-outline-primary">PREVIEW PERMOHONAN</button>
+                                        <button class="btn btn-success float-right">SUBMIT</button>
+                                    </div>
+                                    <div class="tab-pane" id="history_penjuan">
+                                        <table class="table table-hover project">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Nama Pengajuan</th>
+                                                    <th>Progress</th>
+                                                    <th>Status</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td><a>Permohonan Izin Tinggal</a><br><small>No.Permohonan
+                                                            [39989897]<br>Tgl. Pengajuan :
+                                                            12-12-2020</small></td>
+                                                    <td></td>
+                                                    <td class="project-state"><span class="badge badge-primary">On
+                                                            Progess</span></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>#</td>
+                                                    <td><a>Permohonan Izin Tinggal Terbatas</a><br><small>No.Permohonan
+                                                            [39989897]<br>Tgl. Pengajuan :
+                                                            12-12-2020</small></td>
+                                                    <td></td>
+                                                    <td class="project-state"><span
+                                                            class="badge badge-success">Selesai</span></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end tabs detail-->
+                </div>
+            </div>
+
+            <!--Modal cari penjamin-->
+            <div class="modal fade" id="modal-lg">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Penjamin</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group">
+                                <input type="text" name="searchpenjamin" id="" placeholder="Cari Penjamin"
+                                    class="form-control">
+                                <span class="input-group-append">
+                                    <button class="btn btn-info">
+                                        <i class="fas fa-search mr-2"></i> Find
+                                    </button>
+                                </span>
+                            </div>
+                            <table class="table table-hover mt-5">
+                                <thead>
+                                    <tr>
+                                        <th>Nama Penjamin</th>
+                                        <th>Alamat</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Universitas Gajah Mada</td>
+                                        <td>Jl. Atmosukarto No.44 Kel. Selaman, Kec. Sleman, Kab. Sleman, Yogyakarta
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Universitas Negeri Yogyakarta</td>
+                                        <td>Jl. Atmosukarto No.43 Kel. Selaman, Kec. Sleman, Kab. Sleman, Yogyakarta
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Universitas Islam Negeri Sunan Kalijaga</td>
+                                        <td>Jl. Laksda. Adisutjipto No.43 Kel. Selaman, Kec. Sleman, Kab. Sleman,
+                                            Yogyakarta
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+
+
+        </section>
+    </div>
+    <!--end content wraper-->
+
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="assets/plugins/select2/js/select2.full.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/dist/js/adminlte.min.js"></script>
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+        })
+    </script>
+
+</body>
+
+</html>
